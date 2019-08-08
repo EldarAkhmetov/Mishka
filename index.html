@@ -16,7 +16,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a href="#">Вязание на заказ</a>
@@ -148,7 +148,20 @@
           <img class="copyright__image" src="img/htmlacademy-logo.svg" alt="Логотип htmlacademy">
         </a>
       </div>
-
     </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__choose-size">Выберите размер</p>
+      <form class="modal__size-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="modal__size-toggle" type="radio" name="size" id="size-s" value="s" checked>
+        <label for="size-s" tabindex="0">S</label>
+        <input class="modal__size-toggle" type="radio" name="size" id="size-m" value="m">
+        <label for="size-s" tabindex="0">M</label>
+        <input class="modal__size-toggle" type="radio" name="size" id="size-l" value="l">
+        <label for="size-s" tabindex="0">L</label>
+        <button class="modal__submit button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
