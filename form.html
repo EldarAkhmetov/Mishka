@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mishka</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="90" height="43" alt="Магазин Mishka">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="order-form">
+      <h1 class="order-form__title">Вязание на заказ</h1>
+      <p order-form__description>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">Тип</legend>
+          <input class="order-form__type-toggle" type="radio" name="type" id="interior" value="interior" checked>
+          <label for="interior" tabindex="0">Аксессуар для интерьера</label>
+
+          <input class="order-form__type-toggle" type="radio" name="type" id="toy" value="toy">
+          <label for="toy" tabindex="0">Детская игрушка</label>
+
+        </fieldset>
+
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">Цвет</legend>
+
+          <input class="order-form__color-toggle" type="checkbox" id="white" name="color-toggle" value="white" checked>
+          <label for="white" tabindex="0">Белый</label>
+
+          <input class="order-form__color-toggle" type="checkbox" id="grey" name="color-toggle" value="grey" checked>
+          <label for="grey" tabindex="0">Серый</label>
+
+          <input class="order-form__color-toggle" type="checkbox" id="tiffany" name="color-toggle" value="tiffany">
+          <label for="tiffany" tabindex="0">«Тиффани»</label>
+
+          <input class="order-form__color-toggle" type="checkbox" id="black" name="color-toggle" value="black">
+          <label for="black" tabindex="0">Чёрный</label>
+
+          <input class="order-form__color-toggle" type="checkbox" id="pink" name="color-toggle" value="pink">
+          <label for="pink" tabindex="0">Розовый</label>
+
+          <input class="order-form__color-toggle" type="checkbox" id="orange" name="color-toggle" value="orange">
+          <label for="orange" tabindex="0">Оранжевый</label>
+
+        </fieldset>
+
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">Фио</legend>
+
+          <input class="order-form__name-field" type="text" name="name" id="customer-name" placeholder="Введите ваше имя*" required>
+          <label for="customer-name" tabindex="0">Имя:</label>
+
+          <input class="order-form__name-field" type="text" name="lastname" id="customer-lastname" placeholder="Укажите фамилию*" required>
+          <label for="customer-lastname" tabindex="0">Фамилия:</label>
+
+          <input class="order-form__name-field" type="text" name="middlename" id="customer-middlename" placeholder="Отчество, если желаете">
+          <label for="customer-middlename" tabindex="0">Отчество:</label>
+
+        </fieldset>
+
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">Тел</legend>
+
+          <input class="order-form__phone" type="phone" name="phone" id="customer-phone" placeholder="+7 XXX XX XX*" required>
+          <label for="customer-phone" tabindex="0">Телефон:</label>
+
+
+        </fieldset>
+
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">E-mail</legend>
+
+          <input class="order-form__phone" type="email" name="email" id="customer-email" placeholder="Ваш Email*" required>
+          <label for="customer-email" tabindex="0">E-mail:</label>
+
+
+        </fieldset>
+
+        <fieldset class="order-form__section">
+          <legend class="order-form__section-name">Доп</legend>
+          <textarea id="feedback-textarea" class="feedback-textarea" name="question" type="text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+
+        <p class="order-form__star-description">*Поля обязательны для заполнения</p>
+
+        <button class="order-form__submit button" type="submit">Отправить заказ</button>
+
+
+
+
+
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="90" height="43" alt="Магазин Mishka">
+      </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="img/htmlacademy-logo.svg" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__choose-size">Выберите размер</p>
+      <form class="modal__size-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="modal__size-toggle" type="radio" name="size" id="size-s" value="s" checked>
+        <label for="size-s" tabindex="0">S</label>
+        <input class="modal__size-toggle" type="radio" name="size" id="size-m" value="m">
+        <label for="size-s" tabindex="0">M</label>
+        <input class="modal__size-toggle" type="radio" name="size" id="size-l" value="l">
+        <label for="size-s" tabindex="0">L</label>
+        <button class="modal__submit button" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
