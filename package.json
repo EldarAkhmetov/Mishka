@@ -1,0 +1,48 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Project Mishka",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "css-mqpacker": "^7.0.0",
+    "del": "^5.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EldarAkhmetov/Mishka.git"
+  },
+  "author": "EldarAkhmetov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EldarAkhmetov/Mishka/issues"
+  },
+  "homepage": "https://github.com/EldarAkhmetov/Mishka#readme",
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
+  "engines": {
+    "node": "6.10"
+  }
+}
