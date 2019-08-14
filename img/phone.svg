@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <image id="phone.svg" class="cls-1" width="25" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAACBUlEQVRIiZ2WbWsTURCFH3fbGtKsin1RK4JQEPv//41YEPzQElujTWPoxjUy4YxMpzfL2gMhy9y5c+Z99wn/jxPgjZ5/AbfAtZ6LqNPzBNgBVj0ke9LtgDGwDxwBDbAs3fVIXgDvA+kc+DQgqlp3T0Ru+ApMS0qnQBXkT4FWnvVhLZ2pIpvInt3/EUk+JgJHFxUDLC2HursSkWEB3AAvlcJOso3i2y1e7uSwhUMV3oy9lt5CZKtAZBH9NFmtfJZQq2u6JL9TijqlxSJ7pu5a6fcHeA6MzEYfCfKkLaRxqVR+V4dNlKKZIlooEpPfGsmrnppcFiLJOtcyOBbBXGdryTfGS0PUqoVzFCjyMzcgnOv/OMi8aZpKE5tx3jPBv+X1aSBqZbRWjTxKs7FXbWnT44LMMdXAGQ6C3GeqCbJNqr3XzaPdcDj29ttCtFAGboLOne7MQx2NeOZrZJ1yjLrlqieiNjnRSRYbxc5bJ1mGKXbs5vXwWESjy5RjlLYhO2wwSasVsZ90Hiy84MBIz32zdI8EFTI3gRtsQlHf6dVwoGH2jmrDwvyH0pvRiD/IcIb3flM48/MvOeocCfJkpqWXI6qUum2otK8evLRKcKJRyPtQmM2LISSRyN94pSVagtVlUCQRNt3fRGp16iMzhz7nTfGYTyLrPvtZ8f3jwWDFtp12f3MDfwFYjY2VEyXAsgAAAABJRU5ErkJggg=="/>
+</svg>

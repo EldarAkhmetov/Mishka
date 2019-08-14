@@ -7,30 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mishka</title>
   </head>
-  <body>
+  <body class="page-wrapper">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="90" height="43" alt="Магазин Mishka">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="90" height="40" alt="Магазин Mishka">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item site-list__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item site-list__item main-nav__item--search">
+                <a href="#">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item site-list__item main-nav__item--cart">
+                <a href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -164,5 +166,8 @@
         <button class="modal__submit button" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
+
+

@@ -4,7 +4,8 @@
   "description": "Project Mishka",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "normalize.less": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
