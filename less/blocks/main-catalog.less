@@ -1,0 +1,127 @@
+.main-catalog {
+  margin: 0;
+
+  background-color: #f9f9f9;
+  background-image: url("../../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -28px;
+
+  box-sizing: border-box;
+  border-top: 1px solid #f9f9f9;
+}
+
+.main-catalog__title {
+  font-family: 'Open Sans Bold';
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 112px;
+}
+
+.main-catalog__list {
+
+}
+
+.main-catalog__item {
+  &--interior a {
+    background-color: #63d1bb;
+  }
+
+  &--interior a::after {
+    background-image: url("../../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--toys a {
+    background-color: #56c3b2;
+  }
+
+  &--toys a::after {
+    background-image: url("../../img/icon-toy.svg");
+    
+  }
+
+  &--interior a:hover {
+    background-color: #59d5bc;
+  }
+
+  &--interior a:hover::after {
+    opacity: 0.3;
+  }
+
+  &--toys a:hover {
+    background-color: #46c1ae;
+  }
+
+  &--toys a:hover::after {
+    opacity: 0.3;
+  }
+
+}
+
+.main-catalog__item a {
+  position: relative;
+
+  font-family: 'Open Sans Bold';
+  font-size: 19px;
+  line-height: 24px;
+
+
+  display: block;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  color: #ffffff;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 68px;
+    top: 20px;
+    right: 28px;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .main-catalog__title {
+    margin-top: 155px;
+    margin-bottom: 360px;
+  }
+  
+  .main-catalog__title br:first-child {
+    display: none;
+  }
+
+  .main-catalog__list {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .main-catalog__item {
+    flex-grow: 1;
+  }
+
+  .main-catalog__item a {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-left: 35px;
+  }
+}
+
+

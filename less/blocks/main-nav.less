@@ -1,33 +1,32 @@
 .main-nav {
+  margin: 0;
+  padding: 0;
+}
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__item {
   position: relative;
 
-  &::before {
-    content: "";
 
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    
-
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-
-    top: 30px;
-    left: 30px;
-
+  &--cart a::before {
+    background-image: url("../../img/icon-cart.svg");
   }
 
-  &--cart::before {
-    background-image: url("../../img/cart.svg");
+  &--cart a:hover::before {
+    background-image: url("../../img/icon-cart-green.svg");
+    opacity: 1;
   }
 
-  &--search::before {
-    background-image: url("../../img/search.svg");
+  &--search a::before {
+    background-image: url("../../img/icon-search.svg");
+  }
+
+  &--search a:hover::before {
+    background-image: url("../../img/icon-search-green.svg");
   }
 }
 
@@ -49,6 +48,23 @@
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 21px;
+    height: 21px;
+
+
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    top: 30px;
+    left: 30px;
+
+  }
+
 }
 
 .main-nav__toggle {
@@ -84,9 +100,10 @@
   }
 }
 
-.main-nav--closed .main-nav__wrapper {
+.main-nav--closed .main-nav__list {
   display: none;
 }
+
 
 .main-nav--opened .main-nav__toggle {
   border: none;
@@ -113,4 +130,79 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav__free-delivery {
+  display: none;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: block;
+  }
+
+  .main-nav .main-nav__site-list {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+
+
+
+    top: 105px;
+    left: 50px;
+    width: 310px;
+    justify-content: space-between;
+
+  }
+
+  .main-nav__site-list a {
+    padding: 0;
+    font-size: 15px;
+    border: none;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .main-nav .main-nav__user-list {
+    display: flex;
+  }
+
+  .main-nav__user-list a {
+    padding-right: 50px;
+  }
+
+  .main-nav__item {
+
+    &--search a {
+      font-size: 0;
+      margin: 0;
+      padding-right: 0;
+
+      border-right: 1px solid #ececec;
+    }
+
+  }
+
+  .main-nav__free-delivery {
+    position: absolute;
+    display: inline;
+    right: 50px;
+    top: 105px;
+  }
+
 }
