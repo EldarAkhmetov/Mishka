@@ -1,13 +1,14 @@
 .page-header {
   width: 100%;
-  border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+
 }
 
 .page-header__logo {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+
 
   &:hover[href] {
     opacity: 0.6;
@@ -16,18 +17,35 @@
 
 .page-header__logo-image {
   margin: auto;
-
 }
 
 @media (min-width: @tablet-width) {
+
   .page-header__logo {
     flex-grow: 1;
     border-right: 1px solid #ececec;
+
+
   }
 
   .page-header__logo-image {
+    width: 117px;
+    height: auto;
     margin: 0;
     margin-left: 50px;
   }
 
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+  }
+
+  .page-header__logo-image {
+    width: 158px;
+    margin: 0;
+  }
 }

@@ -1,13 +1,29 @@
 .main-catalog {
   margin: 0;
+  position: relative;
 
   background-color: #f9f9f9;
-  background-image: url("../../img/hero-mobile.jpg");
+  background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -28px;
+  background-position: center -15px;
 
   box-sizing: border-box;
   border-top: 1px solid #f9f9f9;
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    display: none;
+    width: 100%;
+    height: 14px;
+    bottom: 0;
+  }
 }
 
 .main-catalog__title {
@@ -19,11 +35,9 @@
 
   margin: auto;
   margin-top: 70px;
-  margin-bottom: 112px;
-}
+  margin-bottom: 120px;
 
-.main-catalog__list {
-
+  color: @title-text-color;
 }
 
 .main-catalog__item {
@@ -42,7 +56,7 @@
 
   &--toys a::after {
     background-image: url("../../img/icon-toy.svg");
-    
+
   }
 
   &--interior a:hover {
@@ -78,6 +92,15 @@
 
   color: #ffffff;
   box-sizing: border-box;
+  transition-duration: 150ms;
+
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 30px;
+
+
+
+  }
 
   &::after {
     content: "";
@@ -97,11 +120,26 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-catalog {
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    &::after {
+      display: block;
+    }
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
   .main-catalog__title {
     margin-top: 155px;
     margin-bottom: 360px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
-  
+
   .main-catalog__title br:first-child {
     display: none;
   }
@@ -121,6 +159,21 @@
     line-height: 30px;
 
     padding-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__title {
+    margin-top: 155px;
+    margin-bottom: 346px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .main-catalog__list {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
