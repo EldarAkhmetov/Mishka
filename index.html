@@ -15,7 +15,7 @@
           <div class="main-nav__wrapper">
             <a class="page-header__logo">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+                  <source media="(min-width: 1250px)" srcset="img/logo/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
                 <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="90" height="40" alt="Магазин Mishka">
               </picture>
@@ -72,27 +72,32 @@
         <div class="container week-product__wrapper">
           <h2 class="week-product__title">Товар недели</h2>
           <b class="week-product__name">Вязаные корзинки</b>
-          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах</p>
-          <table class="week-product__specs">
-            <tr>
-              <td class="week-product__spec">Цвет:</td>
-              <td class="week-product__value">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="week-product__spec">Диаметр:</td>
-              <td class="week-product__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="week-product__spec">Высота:</td>
-              <td class="week-product__value">15 см</td>
-            </tr>
-          </table>
-          <p class="week-product__image">
-            
-            <img class="week-product__picture" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-          </p>
-          <p class="week-product__price">Цена: 990 руб.</p>
-          <button class="week-procuct__order-button button" type="button">Заказать</button>
+          <div class="week-product__description-wrapper">
+            <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах</p>
+            <table class="week-product__specs">
+              <tr>
+                <td class="week-product__spec">Цвет:</td>
+                <td class="week-product__value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="week-product__spec">Диаметр:</td>
+                <td class="week-product__value">25 см</td>
+              </tr>
+              <tr>
+                <td class="week-product__spec">Высота:</td>
+                <td class="week-product__value">15 см</td>
+              </tr>
+            </table>
+            <p class="week-product__image">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="week-product__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              </picture>
+            </p>
+            <p class="week-product__price">Цена: 990 руб.</p>
+            <button class="week-procuct__order-button button" type="button">Заказать</button>
+          </div>
         </div>
       </section>
 

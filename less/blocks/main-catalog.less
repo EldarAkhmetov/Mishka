@@ -19,6 +19,7 @@
     content: "";
     position: absolute;
     background-image: url("../../img/bg-zigzag-fill.svg");
+    
     display: none;
     width: 100%;
     height: 14px;
@@ -41,6 +42,10 @@
 }
 
 .main-catalog__item {
+  a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--interior a {
     background-color: #63d1bb;
   }
@@ -92,7 +97,8 @@
 
   color: #ffffff;
   box-sizing: border-box;
-  transition-duration: 150ms;
+  transition: padding 150ms,
+              margin 150ms;
 
   &:hover {
     margin-top: -5px;

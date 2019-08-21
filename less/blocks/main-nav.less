@@ -55,6 +55,10 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &::before {
     content: "";
 
@@ -71,6 +75,10 @@
 
   }
 
+  &:active::before {
+    opacity: 0.3;
+  }
+
 }
 
 .main-nav__toggle {
@@ -84,9 +92,8 @@
   background-color: transparent;
 
   cursor: pointer;
-
   border: none;
-  outline: none;
+
 }
 
 
@@ -112,7 +119,6 @@
 
 
 .main-nav--opened .main-nav__toggle {
-  border: none;
 
   &::before,
   &::after {
@@ -121,8 +127,8 @@
     height: 2px;
     background-color: #221f1f;
     position: absolute;
-    left: 0;
-    top: 5px;
+    left: 1px;
+    top: 6px;
   }
 
   &::before {
