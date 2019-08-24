@@ -1,20 +1,5 @@
 .week-product {
-
-  &::after {
-    content: "";
-    display: block;
-
-    height: 10px;
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: contain;
-    overflow: hidden;
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-  }
+  .zigzag-line-border-bottom;
 }
 
 .week-product__wrapper {
@@ -104,11 +89,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .week-product {
-    &::after {
-      height: 22px;
-    }
-  }
   .week-product__wrapper {
     padding-top: 40px;
     padding-left: 50px;
@@ -161,13 +141,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .week-product {
-    &::after {
-      height: 28px;
-
-    }
-  }
-
   .week-product__wrapper {
     padding-left: 50px;
     padding-right: 50px;
