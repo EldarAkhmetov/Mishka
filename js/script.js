@@ -17,9 +17,11 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-orderButton.addEventListener('click', function() {
-  modal.classList.remove('modal--closed');
-});
+if (orderButton) {
+  orderButton.addEventListener('click', function() {
+    modal.classList.remove('modal--closed');
+  });
+}
 
 modalBackground.addEventListener('click', function() {
   modal.classList.add('modal--closed');
