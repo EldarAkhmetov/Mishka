@@ -43,12 +43,13 @@
   transition: 50ms;
 
   outline: none;
-  
 
-  &:hover {
+
+  &:hover,
+  &:focus {
     top: 30px;
     left: 68px;
-    
+
     width: 126px;
     height: 96px;
     cursor: pointer;
@@ -57,7 +58,7 @@
   &:active {
     top: 40px;
     left: 88px;
-    
+
     width: 84px;
     height: 64px;
 
@@ -110,7 +111,7 @@
   margin-bottom: 27px;
 
   font-size: 13px;
-  line-height: 24px;  
+  line-height: 24px;
 }
 
 .production__make-order {
@@ -133,7 +134,8 @@
     top: 190px;
     left: 280px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       top: 185px;
       left: 270px;
     }
@@ -180,13 +182,9 @@
   .production__wrapper {
     width: 1050px;
     margin-bottom: 106px;
-    
+
     display: flex;
     justify-content: space-between;
-  }
-
-  .production__video {
-    
   }
 
   .production__info-wrapper {
